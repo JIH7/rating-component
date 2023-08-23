@@ -1,0 +1,123 @@
+section {
+  padding: 24px;
+  border-radius: 15px;
+  background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+}
+section > * + * {
+  margin-block-start: 16px;
+  margin-block-end: 0px;
+}
+section > h1 + p {
+  margin-block-start: 10px;
+}
+section > p + div,
+section > div + button {
+  margin-block-start: 24px;
+}
+
+h1 {
+  color: white;
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-feature-settings: "clig" off, "liga" off;
+  color: #969FAD;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #262E38;
+  color: #7C8798;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.175px;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: #7C8798;
+  color: white;
+}
+
+button.selected,
+button.submit {
+  background-color: #FC7614;
+  color: white;
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.submit {
+  border-radius: 22.5px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.867px;
+}
+
+button.submit:hover {
+  background-color: white;
+  color: #FC7614;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    width: 412px;
+    padding: 32px;
+  }
+  section > * + * {
+    margin-block-start: 30px;
+  }
+  section > h1 + p {
+    margin-block-start: 10px;
+  }
+  section > p + div {
+    margin-block-start: 26px;
+  }
+  section > div + button {
+    margin-block-start: 32px;
+  }
+  h1 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 340px;
+  }
+  button {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+  button.submit {
+    font-size: 15px;
+    letter-spacing: 2px;
+    height: 45px;
+  }
+}
+
+/*# sourceMappingURL=RatingComponent.css.map */
