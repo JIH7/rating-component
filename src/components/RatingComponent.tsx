@@ -3,7 +3,13 @@ import "../css/RatingComponent.css"
 import star from "../assets/icon-star.svg"
 import RatingButton from "./RatingButton";
 
-function RatingComponent() {
+interface RatingComponentProps {
+    submit: Function;
+}
+
+function RatingComponent(props : RatingComponentProps) {
+    const { submit } = props;
+
     const [activeButton, setActiveButton] = useState("");
     const nums = ["1", "2", "3", "4", "5"];
 
@@ -19,7 +25,7 @@ function RatingComponent() {
                 })
             }
         </div>
-        <button className="submit">SUBMIT</button>
+        <button onClick={() => submit()} className="submit">SUBMIT</button>
     </section>
   )
 }
