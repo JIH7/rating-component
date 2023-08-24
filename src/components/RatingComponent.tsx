@@ -15,7 +15,7 @@ function RatingComponent(props : RatingComponentProps) {
 
   return (
     <section>
-        <button><img src={star} alt="star" /></button>
+        <div className="star"><img src={star} alt="star" /></div>
         <h1>How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         <div>

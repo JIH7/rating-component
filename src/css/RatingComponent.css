@@ -49,6 +49,19 @@ button {
   transition: all 0.25s;
 }
 
+.star {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #262E38;
+}
+.star img {
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+
 button:hover {
   background-color: #7C8798;
   color: white;
@@ -97,6 +110,14 @@ button.submit:hover {
   section > div + button {
     margin-block-start: 31px;
     margin-block-end: 1px;
+  }
+  .star {
+    width: 51px;
+    height: 51px;
+  }
+  .star img {
+    width: 16px;
+    height: 16px;
   }
   h1 {
     font-feature-settings: "clig" off, "liga" off;
