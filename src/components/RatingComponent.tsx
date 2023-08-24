@@ -25,7 +25,10 @@ function RatingComponent(props : RatingComponentProps) {
                 })
             }
         </div>
-        <button onClick={() => submit()} className="submit">SUBMIT</button>
+        <button onClick={() => {
+            if(activeButton !== "")
+                submit(activeButton)
+        }} className="submit">SUBMIT</button>
     </section>
   )
 }
