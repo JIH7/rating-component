@@ -12,10 +12,6 @@ function App() {
     setRatingComplete(true);
   }
 
-  const returnHome = () => {
-    setRatingComplete(false);
-  }
-
   return (
     <>
       {
