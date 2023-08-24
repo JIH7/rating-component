@@ -113,7 +113,8 @@ button.submit:hover {
         }
 
         > div + button {
-            margin-block-start: 32px;
+            margin-block-start: 31px;
+            margin-block-end: 1px;
         }
     }
 

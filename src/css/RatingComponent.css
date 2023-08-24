@@ -95,7 +95,8 @@ button.submit:hover {
     margin-block-start: 26px;
   }
   section > div + button {
-    margin-block-start: 32px;
+    margin-block-start: 31px;
+    margin-block-end: 1px;
   }
   h1 {
     font-feature-settings: "clig" off, "liga" off;
