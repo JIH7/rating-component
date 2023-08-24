@@ -94,7 +94,9 @@ button.submit:hover {
 
 @media only screen and (min-width: 768px) {
     section {
-        width: 412px;
+        flex-shrink: 0;
+
+        width: 404px;
         border-radius: 30px;
         padding: 32px;
 
